@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Client from "./Client";
 import ClientForm from "./ClientForm";
-import Counter from "./Counter";
 import "./styles.css";
 
 class App extends React.Component {
@@ -36,7 +35,6 @@ class App extends React.Component {
     return (
       <div>
         <h1> {title} </h1>
-        <Counter />
         <ul>
           {this.state.clients.map((client) => (
             <Client details={client} onDelete={this.handleDelete} />
